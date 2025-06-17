@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ROYER evo</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="about">
+    <img src="profil.png" alt="Photo de profil">
+    <div class="collapsible">
+      <div class="header">À propos</div>
+      <div class="dropdown-content">
+        <p>
+          je m'appele evo royer, j'ai 15 ans et je suis en seconde TNE au lycée PIERRE MENDES FRANCE
+
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <section id="projects">
+    <h2>Projets</h2>
+    <div class="grid-container">
+      <!-- Projet 1 -->
+      <div class="project collapsible">
+        <div class="header">lunettes sous titres</div>
+        <div class="dropdown-content">
+          <p>l'objectif du projet est de créer des lunettes qui affichent des sous titres afin d'aider les malentendants</p>
+        </div>
+      </div>
+      <!-- Projet 2 -->
+      <div class="project collapsible">
+        <div class="header">analyse d'os</div>
+        <div class="dropdown-content">
+          <p>le projet est un projet commun entre moi et un serveur discord, il consiste a "démonter" windows , linux ou encore macOS afin de comprendre leur fonctionnement</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="competences">
+    <h2></h2>
+    <div class="grid-container">
+      <section id="competences">
+        <h2>Compétences</h2>
+        <div class="grid-container">
+            <div class="competence collapsible">
+                <div class="header"><a href="https://fr.wikipedia.org/wiki/HTML5" target="_blank">HTML/CSS</a></div>
+            </div>
+            <div class="competence collapsible">
+                <div class="header"><a href="https://fr.wikipedia.org/wiki/PHP" target="_blank">PHP/MYSQL</a></div>
+            </div>
+            <div class="competence collapsible">
+                <div class="header"><a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank">JAVASCRIPT</a></div>
+            </div>
+            <div class="competence collapsible">
+                <div class="header"><a href="https://fr.wikipedia.org/wiki/Python_(langage)" target="_blank">PYTHON</a></div>
+            </div>
+            <div class="competence collapsible">
+                <div class="header"><a href="https://fr.wikibooks.org/wiki/Monter_un_PC/Assemblage" target="_blank">MONTAGE PC</a></div>
+            </div>
+        </div>
+    </section>
+    
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <div class="button-container">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=evoroyer@gmail.com"
+         target="_blank"
+         class="contact-button">
+        Me contacter
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ROYER evo</p>
+  </footer>
+
+  <!-- Script JavaScript pour gérer l'ouverture/fermeture des menus déroulants -->
+  <script>
+    // Sélectionne tous les éléments cliquables ayant la classe 'collapsible'
+    const collapsibles = document.querySelectorAll('.collapsible .header');
+
+    collapsibles.forEach(header => {
+      header.addEventListener('click', () => {
+        // Toggle la classe 'active' sur le parent pour ouvrir/fermer le menu
+        header.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
